@@ -1206,3 +1206,234 @@ h2 em {
     transition: none;
   }
 }
+
+/* =====================================
+   ATLANTIDA RESORT — VISUAL UPGRADE
+   ===================================== */
+
+/* Плавная прокрутка по странице */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Плавные переходы для интерактивных элементов */
+a,
+button,
+.service-card,
+.product-card,
+.drink-row {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.button,
+.proposal-button,
+.nav-book {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+/* Кнопки слегка приподнимаются */
+.button:hover,
+.proposal-button:hover,
+.nav-book:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(34, 25, 16, 0.16);
+}
+
+.button:active,
+.proposal-button:active {
+  transform: translateY(0) scale(0.98);
+}
+
+/* Карточки отдыха */
+.service-card {
+  overflow: hidden;
+  isolation: isolate;
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.service-card img {
+  transition: transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.service-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 20px 45px rgba(24, 35, 28, 0.18);
+}
+
+.service-card:hover img {
+  transform: scale(1.07);
+}
+
+.service-card .round-arrow {
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover .round-arrow {
+  transform: translate(3px, -3px);
+}
+
+/* Карточки еды */
+.product-card {
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.product-card img {
+  transition: transform 0.65s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(30, 35, 30, 0.12);
+}
+
+.product-card:hover img {
+  transform: scale(1.045);
+}
+
+/* Напитки */
+.drink-row {
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
+  border-radius: 12px;
+}
+
+.drink-row:hover {
+  transform: translateX(5px);
+}
+
+/* Фоновое изображение главного экрана */
+.hero-background {
+  animation: heroReveal 1.2s ease both;
+}
+
+.hero-content {
+  animation: contentReveal 0.9s ease 0.15s both;
+}
+
+.hero-sticker {
+  animation: stickerFloat 5s ease-in-out infinite;
+}
+
+/* Романтический раздел */
+.proposal-heart {
+  animation: heartPulse 2.4s ease-in-out infinite;
+}
+
+.proposal-bg {
+  transition: transform 0.8s ease;
+}
+
+.proposal-section:hover .proposal-bg {
+  transform: scale(1.025);
+}
+
+/* Заголовки и ссылки */
+.text-link {
+  transition:
+    color 0.25s ease,
+    gap 0.25s ease;
+}
+
+.text-link:hover {
+  color: var(--terracotta, #b96548);
+}
+
+/* Поля формы */
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.booking-form input:focus,
+.booking-form select:focus,
+.booking-form textarea:focus {
+  outline: none;
+  border-color: var(--terracotta, #b96548);
+  box-shadow: 0 0 0 3px rgba(185, 101, 72, 0.13);
+}
+
+/* Анимации */
+@keyframes heroReveal {
+  from {
+    opacity: 0.65;
+    transform: scale(1.035);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes contentReveal {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes stickerFloat {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(3deg);
+  }
+}
+
+@keyframes heartPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.85;
+  }
+  50% {
+    transform: scale(1.12);
+    opacity: 1;
+  }
+}
+
+/* Уважение к настройке уменьшенного движения */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* На телефонах эффекты не должны мешать */
+@media (hover: none) {
+  .service-card:hover,
+  .product-card:hover,
+  .button:hover,
+  .proposal-button:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .service-card:hover img,
+  .product-card:hover img {
+    transform: none;
+  }
+}
