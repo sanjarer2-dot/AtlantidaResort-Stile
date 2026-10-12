@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#f4fffc">
-  <meta name="description" content="ATLANTIDA RESORT — аквапарк, беседки, ресторан, напитки и отдых у воды.">
+  <meta name="description" content="ATLANTIDA RESORT — аквапарк, беседки, ресторан, напитки, романтические вечера и отдых у воды.">
   <title>ATLANTIDA RESORT — Лови лето</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,9 +16,13 @@
 
 <body>
 
+  <!-- ВЕРХНЯЯ ПОЛОСА -->
+
   <div class="topline">
     ☀️ ТВОЁ МЕСТО ДЛЯ ИДЕАЛЬНОГО ЛЕТА
   </div>
+
+  <!-- ШАПКА САЙТА -->
 
   <header class="header">
     <a href="#home" class="logo">
@@ -27,7 +30,13 @@
       <span>ATLANTIDA<small>RESORT</small></span>
     </a>
 
-    <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню">
+    <button
+      class="menu-toggle"
+      id="menuToggle"
+      aria-label="Открыть меню"
+      aria-expanded="false"
+      type="button"
+    >
       ☰
     </button>
 
@@ -37,6 +46,7 @@
       <a href="#food">Еда</a>
       <a href="#drinks">Напитки</a>
       <a href="#hookah">Кальян</a>
+      <a href="#proposal">Для двоих ♡</a>
       <a href="#booking" class="nav-book">Бронь ↗</a>
     </nav>
   </header>
@@ -116,6 +126,8 @@
 
       <div class="service-grid">
 
+        <!-- АКВАПАРК -->
+
         <a href="#booking" class="service-card service-large">
           <img
             src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1200&q=85"
@@ -123,12 +135,15 @@
             loading="lazy"
           >
           <span class="service-label">01 / ВОДА</span>
+
           <div class="service-info">
             <h3>Аквапарк</h3>
             <p>Освежись и наслаждайся летом</p>
             <span class="round-arrow">↗</span>
           </div>
         </a>
+
+        <!-- БЕСЕДКИ -->
 
         <a href="#booking" class="service-card">
           <img
@@ -137,12 +152,15 @@
             loading="lazy"
           >
           <span class="service-label">02 / КОМФОРТ</span>
+
           <div class="service-info">
             <h3>Беседки</h3>
             <p>Для семьи, друзей и праздников</p>
             <span class="round-arrow">↗</span>
           </div>
         </a>
+
+        <!-- РЕСТОРАН -->
 
         <a href="#food" class="service-card">
           <img
@@ -151,12 +169,15 @@
             loading="lazy"
           >
           <span class="service-label">03 / ВКУС</span>
+
           <div class="service-info">
             <h3>Ресторан</h3>
             <p>Вкусная еда и приятная атмосфера</p>
             <span class="round-arrow">↗</span>
           </div>
         </a>
+
+        <!-- НАПИТКИ -->
 
         <a href="#drinks" class="service-card">
           <img
@@ -165,12 +186,15 @@
             loading="lazy"
           >
           <span class="service-label">04 / СВЕЖЕСТЬ</span>
+
           <div class="service-info">
             <h3>Напитки</h3>
             <p>Лимонады, соки и прохлада</p>
             <span class="round-arrow">↗</span>
           </div>
         </a>
+
+        <!-- КАЛЬЯН -->
 
         <a href="#hookah" class="service-card">
           <img
@@ -179,23 +203,10 @@
             loading="lazy"
           >
           <span class="service-label">05 / АТМОСФЕРА</span>
+
           <div class="service-info">
             <h3>Кальян</h3>
             <p>Расслабленная атмосфера лаунжа</p>
-            <span class="round-arrow">↗</span>
-          </div>
-        </a>
-
-        <a href="#booking" class="service-card">
-          <img
-            src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=1000&q=85"
-            alt="Вода и природа"
-            loading="lazy"
-          >
-          <span class="service-label">06 / ПРИРОДА</span>
-          <div class="service-info">
-            <h3>Рыбалка</h3>
-            <p>Время у воды и свежая форель</p>
             <span class="round-arrow">↗</span>
           </div>
         </a>
@@ -208,14 +219,22 @@
     <section class="food-section section" id="food">
       <div class="section-heading">
         <span class="eyebrow">ВКУСНОЕ НАСТРОЕНИЕ</span>
-        <h2>Сначала купаться.<br><em>Потом вкусно есть.</em></h2>
+
+        <h2>
+          Сначала купаться.<br>
+          <em>Потом вкусно есть.</em>
+        </h2>
+
         <p>
           Отдельный раздел для меню ресторана.
-          Здесь будут фотографии блюд, описание и цены.
+          Здесь можно разместить фотографии блюд,
+          описание и актуальные цены.
         </p>
       </div>
 
       <div class="product-grid">
+
+        <!-- ГОРЯЧИЕ БЛЮДА -->
 
         <article class="product-card">
           <img
@@ -223,6 +242,7 @@
             alt="Мясо на гриле"
             loading="lazy"
           >
+
           <div class="product-body">
             <span class="product-tag">ГОРЯЧЕЕ</span>
             <h3>Блюда на гриле</h3>
@@ -231,12 +251,15 @@
           </div>
         </article>
 
+        <!-- САЛАТЫ -->
+
         <article class="product-card">
           <img
             src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=800&q=85"
             alt="Свежий салат"
             loading="lazy"
           >
+
           <div class="product-body">
             <span class="product-tag">СВЕЖЕЕ</span>
             <h3>Салаты и закуски</h3>
@@ -245,12 +268,15 @@
           </div>
         </article>
 
+        <!-- ФОРЕЛЬ -->
+
         <article class="product-card">
           <img
             src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=85"
             alt="Рыба с лимоном"
             loading="lazy"
           >
+
           <div class="product-body">
             <span class="product-tag">ОСОБОЕ</span>
             <h3>Форель</h3>
@@ -277,12 +303,21 @@
           alt="Летние напитки"
           loading="lazy"
         >
-        <div class="image-note">A LITTLE<br>SUMMER MAGIC ✳</div>
+
+        <div class="image-note">
+          A LITTLE<br>
+          SUMMER MAGIC ✳
+        </div>
       </div>
 
       <div class="drinks-content">
         <span class="eyebrow">ГЛОТОК ЛЕТА</span>
-        <h2>Прохлада<br><em>в каждом глотке.</em></h2>
+
+        <h2>
+          Прохлада<br>
+          <em>в каждом глотке.</em>
+        </h2>
+
         <p>
           После бассейна самое время освежиться.
           Выбери любимый напиток и продолжай наслаждаться отдыхом.
@@ -321,7 +356,7 @@
       </div>
     </section>
 
-    <!-- КАЛЬЯН -->
+    <!-- КАЛЬЯН И ЛАУНЖ -->
 
     <section class="hookah-section section" id="hookah">
       <div class="hookah-image">
@@ -334,15 +369,22 @@
 
       <div class="hookah-content">
         <span class="eyebrow">LOUNGE EXPERIENCE</span>
-        <h2>Замедлись.<br><em>Наслаждайся моментом.</em></h2>
+
+        <h2>
+          Замедлись.<br>
+          <em>Наслаждайся моментом.</em>
+        </h2>
+
         <p>
           Отдельный раздел для лаунж-зоны и кальянного меню.
-          Можно добавить доступные варианты, вкусы, фотографии
+          Здесь можно добавить доступные варианты, фотографии
           и условия заказа после согласования с заведением.
         </p>
+
         <a href="#booking" class="button button-yellow">
           Уточнить условия ↗
         </a>
+
         <p class="small-note">
           Услуга предоставляется только совершеннолетним,
           если она доступна в комплексе и разрешена законом.
@@ -350,73 +392,91 @@
       </div>
     </section>
 
-<section class="proposal-section" id="proposal">
-  <div class="proposal-bg"></div>
-  <div class="proposal-overlay"></div>
+    <!-- ПРЕДЛОЖЕНИЕ РУКИ И СЕРДЦА -->
 
-  <div class="proposal-content">
-    <div class="proposal-label">
-      <span>✦</span> ОСОБЕННЫЙ МОМЕНТ
-    </div>
+    <section class="proposal-section" id="proposal">
+      <div class="proposal-bg"></div>
+      <div class="proposal-overlay"></div>
 
-    <div class="proposal-heart">♡</div>
+      <div class="proposal-content">
+        <div class="proposal-label">
+          <span>✦</span> ОСОБЕННЫЙ МОМЕНТ
+        </div>
 
-    <h2>
-      Скажи ей<br>
-      <em>«Ты выйдешь за меня?»</em>
-    </h2>
+        <div class="proposal-heart">♡</div>
 
-    <p class="proposal-lead">
-      История любви заслуживает красивого начала.
-    </p>
+        <h2>
+          Скажи ей<br>
+          <em>«Ты выйдешь за меня?»</em>
+        </h2>
 
-    <p class="proposal-description">
-      Представь этот вечер: мягкий свет свечей, лепестки роз,
-      цветы, уютная атмосфера и вы вдвоём. Мы поможем обсудить
-      оформление и подготовить место для твоего самого важного вопроса.
-    </p>
+        <p class="proposal-lead">
+          История любви заслуживает красивого начала.
+        </p>
 
-    <div class="proposal-features">
-      <div>
-        <span>♡</span>
-        <p><strong>Романтический декор</strong>
-        <small>Свечи, цветы и атмосфера</small></p>
+        <p class="proposal-description">
+          Представь этот вечер: мягкий свет свечей,
+          лепестки роз, цветы, уютная атмосфера и вы вдвоём.
+          Мы поможем обсудить оформление и подготовить место
+          для твоего самого важного вопроса.
+        </p>
+
+        <div class="proposal-features">
+          <div>
+            <span>♡</span>
+            <p>
+              <strong>Романтический декор</strong>
+              <small>Свечи, цветы и атмосфера</small>
+            </p>
+          </div>
+
+          <div>
+            <span>✧</span>
+            <p>
+              <strong>Ужин для двоих</strong>
+              <small>Особенный вечер вместе</small>
+            </p>
+          </div>
+
+          <div>
+            <span>❋</span>
+            <p>
+              <strong>Твоя идея</strong>
+              <small>Индивидуальные пожелания</small>
+            </p>
+          </div>
+        </div>
+
+        <a
+          href="#booking"
+          class="proposal-button"
+          onclick="document.getElementById('guestService').value='Предложение руки и сердца'"
+        >
+          Обсудить предложение <span>↗</span>
+        </a>
+
+        <p class="proposal-note">
+          Детали, доступность и стоимость оформления
+          согласовываются с администрацией ATLANTIDA RESORT.
+        </p>
       </div>
 
-      <div>
-        <span>✧</span>
-        <p><strong>Ужин для двоих</strong>
-        <small>Особенный вечер вместе</small></p>
+      <div class="proposal-side-text">
+        A MOMENT TO REMEMBER · ATLANTIDA
       </div>
-
-      <div>
-        <span>❋</span>
-        <p><strong>Твоя идея</strong>
-        <small>Индивидуальные пожелания</small></p>
-      </div>
-    </div>
-
-    <a href="#booking"
-       class="proposal-button"
-       onclick="document.getElementById('visitType').value='Предложение руки и сердца'">
-      Обсудить предложение <span>↗</span>
-    </a>
-
-    <p class="proposal-note">
-      Детали, доступность и стоимость оформления согласовываются
-      с администрацией ATLANTIDA RESORT.
-    </p>
-  </div>
-
-  <div class="proposal-side-text">A MOMENT TO REMEMBER · ATLANTIDA</div>
-</section>
+    </section>
 
     <!-- БРОНИРОВАНИЕ -->
 
     <section class="booking-section section" id="booking">
       <div class="booking-copy">
         <span class="eyebrow">ТВОЙ ОТДЫХ НАЧИНАЕТСЯ ЗДЕСЬ</span>
-        <h2>Планируй отдых.<br><em>Остальное — за нами.</em></h2>
+
+        <h2>
+          Планируй отдых.<br>
+          <em>Остальное — за нами.</em>
+        </h2>
+
         <p>
           Оставь заявку, чтобы уточнить доступность беседок,
           условия посещения и услуги комплекса.
@@ -431,15 +491,31 @@
 
       <form class="booking-form" id="bookingForm">
         <h3>Оставить заявку</h3>
-        <p>Заполни данные — и мы покажем результат демонстрации.</p>
+
+        <p>
+          Заполни данные, чтобы обсудить детали посещения.
+        </p>
 
         <label for="guestName">Твоё имя</label>
-        <input id="guestName" name="name" placeholder="Как к тебе обращаться?" required>
+        <input
+          id="guestName"
+          name="name"
+          type="text"
+          placeholder="Как к тебе обращаться?"
+          required
+        >
 
         <label for="guestPhone">Номер телефона</label>
-        <input id="guestPhone" name="phone" type="tel" placeholder="+996 ..." required>
+        <input
+          id="guestPhone"
+          name="phone"
+          type="tel"
+          placeholder="+996 ..."
+          required
+        >
 
         <label for="guestService">Что хочешь забронировать?</label>
+
         <select id="guestService" name="service" required>
           <option value="">Выбери услугу</option>
           <option>Аквапарк</option>
@@ -447,36 +523,64 @@
           <option>Ресторан / еда</option>
           <option>Напитки</option>
           <option>Лаунж / кальян</option>
-          <option>Рыбалка</option>
           <option>Несколько услуг</option>
+          <option>Предложение руки и сердца</option>
         </select>
 
         <div class="form-row">
           <div>
             <label for="guestDate">Дата посещения</label>
-            <input id="guestDate" name="date" type="date">
+            <input
+              id="guestDate"
+              name="date"
+              type="date"
+            >
           </div>
+
           <div>
             <label for="guestCount">Количество гостей</label>
-            <input id="guestCount" name="guests" type="number" min="1" max="100" placeholder="Например, 4">
+            <input
+              id="guestCount"
+              name="guests"
+              type="number"
+              min="1"
+              max="100"
+              placeholder="Например, 4"
+            >
           </div>
         </div>
 
         <label for="guestComment">Пожелания</label>
-        <textarea id="guestComment" name="comment" rows="3" placeholder="Расскажи, что нужно"></textarea>
 
-        <button class="button button-yellow form-submit" type="submit">
+        <textarea
+          id="guestComment"
+          name="comment"
+          rows="3"
+          placeholder="Расскажи, что нужно"
+        ></textarea>
+
+        <button
+          class="button button-yellow form-submit"
+          type="submit"
+        >
           Отправить заявку ↗
         </button>
 
         <p class="form-note">
           Демоверсия: форма пока не отправляет данные владельцу.
         </p>
-        <p id="formMessage" class="form-message" role="status"></p>
+
+        <p
+          id="formMessage"
+          class="form-message"
+          role="status"
+        ></p>
       </form>
     </section>
 
   </main>
+
+  <!-- ПОДВАЛ -->
 
   <footer class="footer">
     <a href="#home" class="logo">
@@ -491,10 +595,13 @@
       <a href="#food">Еда</a>
       <a href="#drinks">Напитки</a>
       <a href="#hookah">Кальян</a>
+      <a href="#proposal">Для двоих ♡</a>
       <a href="#booking">Бронь</a>
     </div>
 
-    <small>© <span id="year"></span> ATLANTIDA RESORT · Демонстрационный прототип</small>
+    <small>
+      © <span id="year"></span> ATLANTIDA RESORT · Демонстрационный прототип
+    </small>
   </footer>
 
   <script src="script.js"></script>
