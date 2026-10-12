@@ -23,3 +23,10 @@
 /* Address block */
 .footer-address{display:flex;align-items:flex-start;gap:12px;max-width:340px;padding:14px 18px;border:1px solid var(--line);border-radius:2px;background:#fffaf2}.address-icon{font-size:25px;line-height:1;color:#a37a42}.footer-address small{display:block;margin-bottom:7px;font-size:8px;letter-spacing:.17em;color:#9a8061}.footer-address a{font-size:11px;line-height:1.8;color:var(--ink);text-decoration:none}.footer-address a span{color:#a37a42;margin-left:4px}.footer-address a:hover{color:#9b7139}
 @media(max-width:640px){.footer-address{order:4;width:100%;max-width:none}.footer-address a{font-size:12px}.footer-address small{font-size:8px}}
+
+/* Official ATLANTIDA brand mark */
+.brand-logo{width:54px;height:54px;object-fit:cover;border-radius:50%;border:1px solid rgba(194,151,82,.65);box-shadow:0 3px 14px rgba(73,47,23,.16);flex:0 0 auto}
+.footer .brand-logo{width:58px;height:58px}
+.brand-name{color:#403326}
+.brand-name small{color:#9b7440}
+@media(max-width:760px){.site-header{height:74px;padding-inline:18px;gap:12px}.brand{gap:9px}.brand-logo{width:43px;height:43px}.brand-name{font-size:10px;letter-spacing:.13em}.brand-name small{font-size:7px;letter-spacing:.14em}.footer .brand-logo{width:48px;height:48px}}
