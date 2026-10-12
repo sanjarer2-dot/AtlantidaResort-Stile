@@ -1,652 +1,119 @@
-```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#fbf3e6">
-  <meta name="description" content="ATLANTIDA RESORT — аквапарк, уютные беседки, ресторан, освежающие напитки и особенные моменты у воды.">
-  <meta name="color-scheme" content="light">
-
-  <title>ATLANTIDA RESORT — Твоё лето начинается здесь</title>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#26251f">
+  <meta name="description" content="ATLANTIDA RESORT — уютные кабинки, купол, ресторан и отдых в атмосфере золотого заката.">
+  <title>ATLANTIDA RESORT — место, куда хочется возвращаться</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://images.unsplash.com">
-
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
-
 <body>
-
-  <!-- TOPLINE -->
-
-  <div class="topline">
-    <span>☀</span>
-    ТВОЁ МЕСТО ДЛЯ ИДЕАЛЬНОГО ЛЕТА
-    <span>✳</span>
-  </div>
-
-  <!-- HEADER -->
-
-  <header class="header">
-    <a href="#home" class="logo" aria-label="ATLANTIDA RESORT — главная">
-      <span class="logo-icon">A<span>≈</span></span>
-      <span class="logo-name">
-        ATLANTIDA
-        <small>RESORT</small>
-      </span>
+  <div class="announcement">ATLANTIDA RESORT <span>·</span> МЕСТО ДЛЯ ВАШИХ ОСОБЕННЫХ МОМЕНТОВ</div>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="ATLANTIDA RESORT — главная">
+      <span class="brand-mark">A<span>✦</span></span>
+      <span class="brand-name">ATLANTIDA<small>RESORT & RESTAURANT</small></span>
     </a>
-
-    <button
-      class="menu-toggle"
-      id="menuToggle"
-      type="button"
-      aria-label="Открыть меню"
-      aria-controls="navigation"
-      aria-expanded="false"
-    >
-      <span></span>
-      <span></span>
-    </button>
-
-    <nav class="navigation" id="navigation" aria-label="Главная навигация">
-      <a href="#home">Главная</a>
-      <a href="#services">Отдых</a>
-      <a href="#food">Ресторан</a>
-      <a href="#drinks">Напитки</a>
-      <a href="#hookah">Лаунж</a>
-      <a href="#proposal">Для двоих</a>
-      <a href="#booking" class="nav-book">Забронировать <span>↗</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="navigation"><span></span><span></span></button>
+    <nav class="navigation" id="navigation">
+      <a href="#about">О нас</a><a href="#spaces">Пространства</a><a href="#gallery">Галерея</a><a href="#restaurant">Ресторан</a>
+      <a class="nav-cta" href="#booking">Забронировать <span>↗</span></a>
     </nav>
   </header>
 
   <main>
-
-    <!-- HERO -->
-
-    <section class="hero" id="home">
-      <div class="hero-background" aria-hidden="true"></div>
-
-      <div class="hero-content">
-        <div class="hero-label">
-          <span></span>
-          ТВОЙ ЛЕТНИЙ ESCAPE
+    <section class="hero" aria-label="Добро пожаловать в ATLANTIDA RESORT">
+      <div class="hero-bg" role="img" aria-label="Тёплый закат над территорией курорта"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow light"><span class="eyebrow-dot"></span> ВАШЕ МЕСТО СИЛЫ И СПОКОЙСТВИЯ</p>
+        <h1>Время замедлиться.<br><em>Время быть вместе.</em></h1>
+        <p class="hero-description">Красивые вечера, уютные пространства и вкус, который хочется разделить с близкими.</p>
+        <div class="hero-actions">
+          <a class="button button-gold" href="#spaces">Открыть ATLANTIDA <span>↗</span></a>
+          <a class="button button-glass" href="#gallery"><span class="play-icon">▶</span> Смотреть атмосферу</a>
         </div>
-
-        <h1>
-          Лови моменты.<br>
-          Чувствуй <em>лето.</em>
-        </h1>
-
-        <p>
-          Место, где солнечные дни становятся воспоминаниями.
-          Вода, вкусная еда, уютные беседки и время,
-          которое хочется остановить.
-        </p>
-
-        <div class="hero-buttons">
-          <a href="#services" class="button button-yellow">
-            Открыть для себя <span>↗</span>
-          </a>
-
-          <a href="#booking" class="button button-glass">
-            Спланировать отдых
-          </a>
-        </div>
-
-        <div class="hero-caption">
-          <span class="caption-icon">☀</span>
-          <div>
-            <strong>Там, где начинается лето</strong>
-            <small>Аквапарк · Беседки · Ресторан · Лаунж</small>
-          </div>
-        </div>
+        <div class="hero-bottom"><span>01 — 04</span><span class="hero-line"></span><span>ОТДЫХ, КОТОРЫЙ ЧУВСТВУЕТСЯ</span></div>
       </div>
-
-      <div class="hero-sticker">
-        <span>✳</span>
-        GOOD DAYS<br>
-        GOOD VIBES
-      </div>
-
-      <a href="#welcome" class="scroll-down">
-        ОТКРОЙ СВОЁ ЛЕТО ↓
-      </a>
+      <div class="hero-note"><span class="note-star">✳</span><span>ЗОЛОТОЙ ЧАС<br>В ATLANTIDA</span></div>
+      <a class="scroll-cue" href="#about" aria-label="Прокрутить вниз"><span></span> ЛИСТАЙТЕ НИЖЕ</a>
     </section>
 
-    <!-- WELCOME -->
-
-    <section class="welcome section" id="welcome">
-      <div class="welcome-heading">
-        <span class="eyebrow">WELCOME TO ATLANTIDA</span>
-
-        <h2>
-          Меньше спешки.<br>
-          Больше <em>жизни.</em>
-        </h2>
+    <section class="intro section" id="about">
+      <div class="intro-label reveal"><span class="small-index">01 /</span> ФИЛОСОФИЯ ATLANTIDA</div>
+      <div class="intro-main reveal"><h2>Не просто место.<br><em>Ваше состояние.</em></h2>
+        <p>Когда солнце садится за горизонт, свет становится мягче, разговоры — теплее, а время будто принадлежит только вам. Мы создаём пространство для встреч, отдыха и маленьких историй, которые остаются в памяти.</p>
+        <a class="text-link" href="#booking">Запланировать визит <span>↗</span></a>
       </div>
+      <div class="intro-stamp" aria-hidden="true"><span>ATLANTIDA</span><strong>✳</strong><span>EST. FOR MOMENTS</span></div>
+    </section>
 
-      <div class="welcome-copy">
-        <p>
-          Иногда для счастья нужно совсем немного:
-          тёплый день, прохладная вода, любимые люди рядом
-          и место, где можно просто наслаждаться моментом.
-        </p>
-
-        <a href="#services" class="text-link">
-          Найти свой формат отдыха <span>↗</span>
+    <section class="spaces section" id="spaces">
+      <div class="section-heading reveal"><div class="eyebrow">ВАШ СЦЕНАРИЙ ОТДЫХА</div><h2>Пространства для <em>особенных дней</em></h2><p>Выбирайте настроение — остальное оставьте нам.</p></div>
+      <div class="space-grid">
+        <a class="space-card space-large reveal" href="#booking">
+          <img src="assets/gazebo-evening.jpg" alt="Купол и территория курорта на закате" loading="lazy">
+          <span class="card-number">01 / ПОД ОТКРЫТЫМ НЕБОМ</span><span class="space-arrow">↗</span>
+          <div class="space-info"><span>ТЁПЛЫЕ ВЕЧЕРА</span><h3>Купол и терраса</h3><p>Закаты, мягкий свет и время без спешки.</p></div>
+        </a>
+        <a class="space-card reveal" href="#booking">
+          <img src="assets/stone-cabin.jpg" alt="Каменная кабинка с тёплым освещением" loading="lazy">
+          <span class="card-number">02 / УЕДИНЕНИЕ</span><span class="space-arrow">↗</span>
+          <div class="space-info"><span>ВАШ ЛИЧНЫЙ УГОЛОК</span><h3>Уютные кабинки</h3><p>Комфортная атмосфера для своих.</p></div>
+        </a>
+        <a class="space-card reveal" href="#restaurant">
+          <img src="assets/restaurant-interior.jpg" alt="Уютный интерьер ресторана" loading="lazy">
+          <span class="card-number">03 / ВКУС И АТМОСФЕРА</span><span class="space-arrow">↗</span>
+          <div class="space-info"><span>СОБИРАЕМСЯ ЗА СТОЛОМ</span><h3>Ресторан</h3><p>Вкусная кухня и встречи, которые затягиваются.</p></div>
         </a>
       </div>
     </section>
 
-    <!-- SERVICES -->
+    <section class="quote-band">
+      <div class="quote-bg"></div><div class="quote-content reveal"><span class="quote-mark">“</span><p>Лучшие моменты не требуют повода.<br><em>Только правильного места.</em></p><span class="quote-caption">ATLANTIDA RESORT · СОЗДАНО ДЛЯ ВСТРЕЧ</span></div>
+    </section>
 
-    <section class="services section" id="services">
-      <div class="section-heading">
-        <div>
-          <span class="eyebrow">ТВОЙ ИДЕАЛЬНЫЙ ДЕНЬ</span>
-          <h2>Как выглядит <em>твоё лето?</em></h2>
-        </div>
-
-        <p>
-          Выбирай настроение — об остальном
-          позаботится атмосфера ATLANTIDA.
-        </p>
-      </div>
-
-      <div class="service-grid">
-
-        <a href="#booking" class="service-card service-large">
-          <img
-            src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1400&q=85"
-            alt="Голубая вода бассейна в солнечный день"
-            loading="lazy"
-          >
-
-          <span class="service-label">01 / REFRESH</span>
-
-          <div class="service-info">
-            <h3>Аквапарк</h3>
-            <p>Поймай волну хорошего настроения</p>
-            <span class="round-arrow" aria-hidden="true">↗</span>
-          </div>
-        </a>
-
-        <a href="#booking" class="service-card">
-          <img
-            src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1000&q=85"
-            alt="Комфортный интерьер зоны отдыха"
-            loading="lazy"
-          >
-
-          <span class="service-label">02 / COMFORT</span>
-
-          <div class="service-info">
-            <h3>Беседки</h3>
-            <p>Собирай своих в одном месте</p>
-            <span class="round-arrow" aria-hidden="true">↗</span>
-          </div>
-        </a>
-
-        <a href="#food" class="service-card">
-          <img
-            src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1000&q=85"
-            alt="Аппетитное блюдо на гриле"
-            loading="lazy"
-          >
-
-          <span class="service-label">03 / TASTE</span>
-
-          <div class="service-info">
-            <h3>Ресторан</h3>
-            <p>Вкус, который дополняет отдых</p>
-            <span class="round-arrow" aria-hidden="true">↗</span>
-          </div>
-        </a>
-
-        <a href="#drinks" class="service-card">
-          <img
-            src="https://images.unsplash.com/photo-1513558161293-cd3b9e4a5a5a?auto=format&fit=crop&w=1000&q=85"
-            alt="Освежающие напитки со льдом и фруктами"
-            loading="lazy"
-          >
-
-          <span class="service-label">04 / FRESH</span>
-
-          <div class="service-info">
-            <h3>Напитки</h3>
-            <p>Освежающий вкус солнечного дня</p>
-            <span class="round-arrow" aria-hidden="true">↗</span>
-          </div>
-        </a>
-
-        <a href="#hookah" class="service-card">
-          <img
-            src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1000&q=85"
-            alt="Атмосферный интерьер лаунж-зоны"
-            loading="lazy"
-          >
-
-          <span class="service-label">05 / LOUNGE</span>
-
-          <div class="service-info">
-            <h3>Лаунж</h3>
-            <p>Вечер в спокойном ритме</p>
-            <span class="round-arrow" aria-hidden="true">↗</span>
-          </div>
-        </a>
-
+    <section class="gallery section" id="gallery">
+      <div class="section-heading reveal"><div class="eyebrow">ПОЧУВСТВУЙТЕ АТМОСФЕРУ</div><h2>В каждом кадре — <em>своё настроение</em></h2><p>Нажмите на фотографию, чтобы рассмотреть детали на весь экран.</p></div>
+      <div class="gallery-grid">
+        <button class="gallery-item gallery-tall reveal" data-full="assets/courtyard-sunset.jpg" aria-label="Открыть фотографию террасы на закате"><img src="assets/courtyard-sunset.jpg" alt="Терраса и столы в лучах закатного солнца" loading="lazy"><span>Терраса · золотой час ↗</span></button>
+        <button class="gallery-item reveal" data-full="assets/gazebo-sunset.jpg" aria-label="Открыть фотографию купола на закате"><img src="assets/gazebo-sunset.jpg" alt="Купол на фоне закатного неба" loading="lazy"><span>Купол · вечер ↗</span></button>
+        <button class="gallery-item reveal" data-full="assets/resort-walkway.jpg" aria-label="Открыть фотографию дорожки курорта"><img src="assets/resort-walkway.jpg" alt="Каменная дорожка и подсветка территории" loading="lazy"><span>Прогулка · свет ↗</span></button>
+        <button class="gallery-item reveal" data-full="assets/cabin-exterior.jpg" aria-label="Открыть фотографию каменной кабинки"><img src="assets/cabin-exterior.jpg" alt="Экстерьер уютной каменной кабинки" loading="lazy"><span>Архитектура · детали ↗</span></button>
+        <button class="gallery-item gallery-wide reveal" data-full="assets/restaurant-lounge.jpg" aria-label="Открыть фотографию зала ресторана"><img src="assets/restaurant-lounge.jpg" alt="Зал ресторана с деревянной мебелью и тёплым светом" loading="lazy"><span>Ресторан · уют ↗</span></button>
+        <button class="gallery-item reveal" data-full="assets/restaurant-table.jpg" aria-label="Открыть фотографию обеденной зоны"><img src="assets/restaurant-table.jpg" alt="Обеденная зона ресторана" loading="lazy"><span>Встречи за столом ↗</span></button>
+        <button class="gallery-item reveal" data-full="assets/restaurant-wide.jpg" aria-label="Открыть широкую фотографию ресторана"><img src="assets/restaurant-wide.jpg" alt="Просторный ресторан с подвесными светильниками" loading="lazy"><span>Пространство · свет ↗</span></button>
       </div>
     </section>
 
-    <!-- RESTAURANT -->
-
-    <section class="food-section section" id="food">
-      <div class="section-heading">
-        <span class="eyebrow">MADE FOR GOOD TASTE</span>
-
-        <h2>
-          Хорошая компания.<br>
-          <em>Ещё лучше — еда.</em>
-        </h2>
-
-        <p>
-          После воды и солнца самое время собраться за столом.
-          Открой для себя меню ресторана и уточни наличие блюд.
-        </p>
-      </div>
-
-      <div class="product-grid">
-
-        <article class="product-card">
-          <img
-            src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=85"
-            alt="Мясо на гриле"
-            loading="lazy"
-          >
-
-          <div class="product-body">
-            <span class="product-tag">С ГРИЛЯ</span>
-            <h3>Горячие блюда</h3>
-            <p>Ароматный гриль и сытные блюда для большой компании.</p>
-            <a href="#booking" class="text-link">Уточнить меню ↗</a>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <img
-            src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=900&q=85"
-            alt="Свежий салат из овощей"
-            loading="lazy"
-          >
-
-          <div class="product-body">
-            <span class="product-tag">FRESH</span>
-            <h3>Салаты и закуски</h3>
-            <p>Свежие ингредиенты и лёгкие вкусы для тёплого дня.</p>
-            <a href="#booking" class="text-link">Уточнить меню ↗</a>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <img
-            src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=900&q=85"
-            alt="Рыба с лимоном и зеленью"
-            loading="lazy"
-          >
-
-          <div class="product-body">
-            <span class="product-tag">SPECIAL</span>
-            <h3>Блюда из форели</h3>
-            <p>Уточни доступные рыбные блюда и варианты приготовления.</p>
-            <a href="#booking" class="text-link">Уточнить наличие ↗</a>
-          </div>
-        </article>
-
-      </div>
-
-      <div class="section-action">
-        <a href="#booking" class="button button-dark">
-          Узнать меню и цены <span>↗</span>
-        </a>
-      </div>
+    <section class="restaurant section" id="restaurant">
+      <div class="restaurant-photo reveal"><img src="assets/restaurant-lounge.jpg" alt="Интерьер ATLANTIDA с большим столом и плетёными светильниками" loading="lazy"><span class="photo-caption">МЕСТО, ГДЕ ВЕЧЕР ПРОДОЛЖАЕТСЯ</span></div>
+      <div class="restaurant-copy reveal"><div class="eyebrow">ВКУСНЫЕ МОМЕНТЫ</div><h2>Собраться.<br>Попробовать.<br><em>Запомнить.</em></h2><p>Продуманный интерьер, тёплое освещение и атмосфера, располагающая к долгим разговорам. Приезжайте за вкусом — оставайтесь ради момента.</p><div class="restaurant-feature"><span>✳</span><div><strong>Вкусная кухня</strong><small>Для неспешных обедов и долгих ужинов</small></div></div><div class="restaurant-feature"><span>✳</span><div><strong>Встречи с близкими</strong><small>Поводы могут быть большими и совсем маленькими</small></div></div><a class="button button-dark" href="#booking">Забронировать столик <span>↗</span></a></div>
     </section>
 
-    <!-- DRINKS -->
-
-    <section class="drinks-section section" id="drinks">
-      <div class="drinks-image">
-        <img
-          src="https://images.unsplash.com/photo-1513558161293-cd3b9e4a5a5a?auto=format&fit=crop&w=1200&q=85"
-          alt="Летние напитки с фруктами"
-          loading="lazy"
-        >
-
-        <div class="image-note">
-          A LITTLE<br>
-          SUMMER MAGIC ✳
-        </div>
-      </div>
-
-      <div class="drinks-content">
-        <span class="eyebrow">SIP INTO SUMMER</span>
-
-        <h2>
-          Добавь немного<br>
-          <em>прохлады.</em>
-        </h2>
-
-        <p>
-          Лёд звенит в стакане, фрукты наполняют воздух ароматом,
-          а впереди ещё целый день отдыха.
-        </p>
-
-        <div class="drink-row">
-          <span class="drink-icon" aria-hidden="true">🍋</span>
-          <div>
-            <h3>Лимонады</h3>
-            <p>Цитрусовая свежесть</p>
-          </div>
-          <span class="drink-arrow" aria-hidden="true">↗</span>
-        </div>
-
-        <div class="drink-row">
-          <span class="drink-icon" aria-hidden="true">🍓</span>
-          <div>
-            <h3>Фруктовые напитки</h3>
-            <p>Яркие летние сочетания</p>
-          </div>
-          <span class="drink-arrow" aria-hidden="true">↗</span>
-        </div>
-
-        <div class="drink-row">
-          <span class="drink-icon" aria-hidden="true">☕</span>
-          <div>
-            <h3>Кофе и чай</h3>
-            <p>Небольшая пауза для себя</p>
-          </div>
-          <span class="drink-arrow" aria-hidden="true">↗</span>
-        </div>
-
-        <a href="#booking" class="button button-dark">
-          Узнать ассортимент <span>↗</span>
-        </a>
-      </div>
-    </section>
-
-    <!-- LOUNGE -->
-
-    <section class="hookah-section section" id="hookah">
-      <div class="hookah-image">
-        <img
-          src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1200&q=85"
-          alt="Уютный интерьер для вечернего отдыха"
-          loading="lazy"
-        >
-      </div>
-
-      <div class="hookah-content">
-        <span class="eyebrow">SLOW DOWN · LOUNGE</span>
-
-        <h2>
-          Оставь спешку<br>
-          <em>за пределами вечера.</em>
-        </h2>
-
-        <p>
-          Приглушённый свет, спокойная музыка и время для общения.
-          Узнай у администрации о доступности лаунж-зоны,
-          меню и условиях посещения.
-        </p>
-
-        <a href="#booking" class="button button-yellow">
-          Уточнить условия <span>↗</span>
-        </a>
-
-        <p class="small-note">
-          Если доступны услуги кальяна, они предоставляются
-          только совершеннолетним и в соответствии с законом.
-        </p>
-      </div>
-    </section>
-
-    <!-- ROMANTIC MOMENTS -->
-
-    <section class="proposal-section" id="proposal">
-      <div class="proposal-bg" aria-hidden="true"></div>
-      <div class="proposal-overlay" aria-hidden="true"></div>
-
-      <div class="proposal-content">
-        <div class="proposal-label">
-          <span>✦</span>
-          FOR YOUR SPECIAL MOMENT
-        </div>
-
-        <div class="proposal-heart" aria-hidden="true">♡</div>
-
-        <h2>
-          Один вопрос.<br>
-          <em>Воспоминание на всю жизнь.</em>
-        </h2>
-
-        <p class="proposal-lead">
-          Пусть самое важное «да» начнётся красиво.
-        </p>
-
-        <p class="proposal-description">
-          Представь мягкий свет свечей, цветы, любимого человека
-          напротив и вечер, который вы будете вспоминать годами.
-          Расскажи нам о своей идее — вместе обсудим возможное
-          оформление и детали вашего особенного дня.
-        </p>
-
-        <div class="proposal-features">
-          <div>
-            <span aria-hidden="true">♡</span>
-            <p>
-              <strong>Романтический декор</strong>
-              <small>Цветы, свечи и детали</small>
-            </p>
-          </div>
-
-          <div>
-            <span aria-hidden="true">✧</span>
-            <p>
-              <strong>Вечер для двоих</strong>
-              <small>Ужин в особенной атмосфере</small>
-            </p>
-          </div>
-
-          <div>
-            <span aria-hidden="true">❋</span>
-            <p>
-              <strong>Твоя история</strong>
-              <small>Обсуждение индивидуальной идеи</small>
-            </p>
-          </div>
-        </div>
-
-        <a
-          href="#booking"
-          class="proposal-button"
-          data-service="Предложение руки и сердца"
-        >
-          Обсудить идею <span>↗</span>
-        </a>
-
-        <p class="proposal-note">
-          Доступность, стоимость и детали организации
-          согласовываются с администрацией.
-        </p>
-      </div>
-
-      <div class="proposal-side-text">
-        A MOMENT TO REMEMBER · ATLANTIDA
-      </div>
-    </section>
-
-    <!-- BOOKING -->
-
-    <section class="booking-section section" id="booking">
-      <div class="booking-copy">
-        <span class="eyebrow">LET'S MAKE IT HAPPEN</span>
-
-        <h2>
-          Твой день.<br>
-          <em>Твои впечатления.</em>
-        </h2>
-
-        <p>
-          Расскажи, как хочешь провести время.
-          Оставь заявку, чтобы обсудить посещение комплекса,
-          доступность услуг и детали бронирования.
-        </p>
-
-        <div class="booking-points">
-          <div>
-            <span aria-hidden="true">☀</span>
-            <span>Для семьи, друзей и близких</span>
-          </div>
-
-          <div>
-            <span aria-hidden="true">🌊</span>
-            <span>Разные форматы отдыха</span>
-          </div>
-
-          <div>
-            <span aria-hidden="true">✳</span>
-            <span>Удобная заявка онлайн</span>
-          </div>
-        </div>
-      </div>
-
-      <form class="booking-form" id="bookingForm">
-        <h3>Давай спланируем отдых</h3>
-
-        <p>Оставь контакты и расскажи о своих планах.</p>
-
-        <label for="guestName">Как тебя зовут?</label>
-        <input
-          id="guestName"
-          name="name"
-          type="text"
-          autocomplete="name"
-          placeholder="Твоё имя"
-          maxlength="100"
-          required
-        >
-
-        <label for="guestPhone">Номер телефона</label>
-        <input
-          id="guestPhone"
-          name="phone"
-          type="tel"
-          autocomplete="tel"
-          placeholder="+996 ..."
-          maxlength="30"
-          required
-        >
-
-        <label for="guestService">Какой отдых выбираешь?</label>
-        <select id="guestService" name="service" required>
-          <option value="">Выбери вариант</option>
-          <option value="Аквапарк">Аквапарк</option>
-          <option value="Беседка">Беседка</option>
-          <option value="Ресторан / еда">Ресторан / еда</option>
-          <option value="Напитки">Напитки</option>
-          <option value="Лаунж / кальян">Лаунж / кальян</option>
-          <option value="Несколько услуг">Несколько услуг</option>
-          <option value="Предложение руки и сердца">Предложение руки и сердца</option>
-        </select>
-
-        <div class="form-row">
-          <div>
-            <label for="guestDate">Дата посещения</label>
-            <input
-              id="guestDate"
-              name="date"
-              type="date"
-            >
-          </div>
-
-          <div>
-            <label for="guestCount">Количество гостей</label>
-            <input
-              id="guestCount"
-              name="guests"
-              type="number"
-              min="1"
-              max="100"
-              placeholder="Например, 4"
-            >
-          </div>
-        </div>
-
-        <label for="guestComment">Пожелания</label>
-        <textarea
-          id="guestComment"
-          name="comment"
-          rows="3"
-          maxlength="1500"
-          placeholder="Расскажи подробнее о своём отдыхе..."
-        ></textarea>
-
-        <button
-          class="button button-yellow form-submit"
-          type="submit"
-        >
-          Обсудить бронирование <span>↗</span>
-        </button>
-
-        <p class="form-note">
-          Отправка заявки будет доступна после подключения формы
-          к телефону, почте или серверу заведения.
-        </p>
-
-        <p
-          id="formMessage"
-          class="form-message"
-          role="status"
-          aria-live="polite"
-        ></p>
+    <section class="booking section" id="booking">
+      <div class="booking-copy reveal"><div class="eyebrow light">ВАШ ВЕЧЕР НАЧИНАЕТСЯ ЗДЕСЬ</div><h2>Давайте создадим<br><em>ваш момент.</em></h2><p>Расскажите, что планируете, — мы поможем сориентироваться и обсудить детали визита.</p><div class="booking-contact"><span class="contact-icon">↗</span><div><small>СЛЕДУЮЩИЙ ШАГ</small><strong>Оставьте заявку</strong></div></div></div>
+      <form class="booking-form reveal" id="bookingForm">
+        <div class="form-top"><span>ATLANTIDA / BOOKING</span><span>01 — 03</span></div><h3>Планируем ваш визит</h3><p>Заполните форму — и мы свяжемся с вами.</p>
+        <label for="guestName">Как к вам обращаться?</label><input id="guestName" name="name" type="text" placeholder="Ваше имя" autocomplete="name" required>
+        <div class="form-row"><div><label for="guestPhone">Номер телефона</label><input id="guestPhone" name="phone" type="tel" placeholder="+996 ..." autocomplete="tel" required></div><div><label for="visitDate">Дата визита</label><input id="visitDate" name="date" type="date" required></div></div>
+        <label for="visitType">Что хотите забронировать?</label><select id="visitType" name="type" required><option value="" selected disabled>Выберите вариант</option><option>Уютная кабинка</option><option>Купол / терраса</option><option>Столик в ресторане</option><option>Праздник или мероприятие</option><option>Хочу уточнить варианты</option></select>
+        <label for="guestMessage">Комментарий <span>(необязательно)</span></label><textarea id="guestMessage" name="message" rows="3" placeholder="Количество гостей, пожелания..."></textarea>
+        <button class="button button-gold form-submit" type="submit">Отправить заявку <span>↗</span></button>
+        <p class="form-message" id="formMessage" role="status" aria-live="polite"></p><small class="form-note">Сейчас форма демонстрационная: для получения заявок нужно подключить отправку на телефон, почту или мессенджер.</small>
       </form>
     </section>
-
   </main>
 
-  <!-- FOOTER -->
+  <footer class="footer"><a class="brand footer-brand" href="#top"><span class="brand-mark">A<span>✦</span></span><span class="brand-name">ATLANTIDA<small>RESORT & RESTAURANT</small></span></a><p>Место для вкуса, встреч и тёплых воспоминаний.</p><a href="#top" class="back-top">НАВЕРХ ↑</a><div class="footer-bottom"><span>© <span id="year"></span> ATLANTIDA RESORT</span><span>СОЗДАНО ДЛЯ ОСОБЕННЫХ МОМЕНТОВ</span></div></footer>
 
-  <footer class="footer">
-    <a href="#home" class="logo" aria-label="ATLANTIDA RESORT — наверх">
-      <span class="logo-icon">A<span>≈</span></span>
-      <span class="logo-name">
-        ATLANTIDA
-        <small>RESORT</small>
-      </span>
-    </a>
-
-    <p class="footer-tagline">
-      Лови моменты. Наслаждайся летом.
-    </p>
-
-    <div class="footer-links">
-      <a href="#services">Отдых</a>
-      <a href="#food">Ресторан</a>
-      <a href="#drinks">Напитки</a>
-      <a href="#hookah">Лаунж</a>
-      <a href="#proposal">Для двоих</a>
-      <a href="#booking">Бронирование</a>
-    </div>
-
-    <small class="footer-copyright">
-      © <span id="year"></span> ATLANTIDA RESORT
-    </small>
-  </footer>
-
-  <script src="script.js"></script>
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Просмотр фотографии">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Закрыть фотографию">×</button><button class="lightbox-prev" id="lightboxPrev" aria-label="Предыдущая фотография">‹</button><img id="lightboxImage" src="" alt=""><button class="lightbox-next" id="lightboxNext" aria-label="Следующая фотография">›</button><div class="lightbox-count" id="lightboxCount"></div>
+  </div>
 </body>
 </html>
-```
